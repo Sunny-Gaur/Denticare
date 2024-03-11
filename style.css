@@ -101,7 +101,7 @@ p{
     background:url("./Assets/floater-2.png");
     background-attachment: fixed;
     height: 100%;
-    width: 100%;
+    /* width: 100%; */
     z-index: 10;
 }
 
@@ -448,6 +448,10 @@ left: 100px;
 .mynav li{
     list-style: none;
 }
+::-webkit-scrollbar{
+    width:0px;
+}
+
 
 
 
@@ -467,6 +471,7 @@ left: 100px;
 }
 
 @media screen and (max-width:991px){ 
+   
     .sm-work{
         position: absolute;
         bottom: 0;
