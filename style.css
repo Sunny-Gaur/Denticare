@@ -1,8 +1,15 @@
 
 html{
     overflow-x: hidden;
+  
+}
+*{
+    overflow-x:hidden;
 }
 
+::-webkit-scrollbar{
+    width: 0px !important;
+}
 
 .logo{
     width: 215px !important;
@@ -526,8 +533,8 @@ left: 100px;
     .ex-sm{
         height: 100px !important;
     }
-    .top{
-        top: -8px;
+    .top,.design2{
+        top: -10px;
     }
     .demtel-txt2{
         font-size: 60px !important;
