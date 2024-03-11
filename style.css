@@ -527,4 +527,8 @@ left: 100px;
     .demtel-txt2{
         font-size: 60px !important;
     }
+    .holiday-scroll{
+        height: 220px !important;
+        width: 220px !important;
+    }
 }
