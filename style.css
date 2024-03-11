@@ -503,6 +503,7 @@ left: 100px;
     }
     .navsm-done{
         flex-direction: row !important;
+        flex-wrap: wrap;
     }
     .sm-center{
         text-align: center !important;
@@ -522,5 +523,8 @@ left: 100px;
     }
     .top{
         top: -8px;
+    }
+    .demtel-txt2{
+        font-size: 60px !important;
     }
 }
