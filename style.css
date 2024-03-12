@@ -1,15 +1,6 @@
 
-html{
-    overflow-x: hidden;
-  
-}
-*{
-    overflow-x:hidden;
-}
 
-::-webkit-scrollbar{
-    width: 0px !important;
-}
+
 
 .logo{
     width: 215px !important;
@@ -447,6 +438,9 @@ left: 100px;
     display: none;
 }
 
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
 .mynav{
     display: flex;
     justify-content: center;
@@ -458,6 +452,7 @@ left: 100px;
 ::-webkit-scrollbar{
     width:0px;
 }
+
 
 
 
@@ -482,6 +477,7 @@ left: 100px;
     .sm-work{
         position: absolute;
         bottom: 0;
+        left: 0;
     }
     .navbar-toggler{
         display: block;
@@ -526,6 +522,11 @@ left: 100px;
     .sm-nav{
         padding-left:10% !important;
     }
+    .footer-txt2{
+        font-size: 30px;
+        line-height: 25px;
+        color: #ffffff;
+    }
 }
 
 
@@ -542,5 +543,19 @@ left: 100px;
     .holiday-scroll{
         height: 220px !important;
         width: 220px !important;
+       
     }
+    .maxium-img{
+        height: 100% !important;
+        width: 100% !important;
+     }
+   
+}
+
+@media screen and (max-width:316px){
+    .holiday-scroll{
+        height: 180px !important;
+        width: 180px !important;
+    }
+    
 }
