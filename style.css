@@ -2,6 +2,9 @@
 html{
     overflow-x: hidden;
 }
+html,body{
+    scroll-behavior: smooth !important;
+}
 .logo{
     width: 215px !important;
 }
@@ -155,12 +158,25 @@ left: 100px;
     position: absolute;
     height: 300px;
     width: 300px;
-    background-image:url("./Assets/home-service-1.png");
     background-size: cover;
     z-index: 2;
     transition: all ease 2s;
     clip-path: polygon(23% 22%, 19% 29%, 13% 35%, 11% 42%, 10% 48%, 11% 53%, 11% 59%, 13% 65%, 15% 71%, 18% 76%, 22% 80%, 26% 84%, 33% 86%, 39% 88%, 47% 89%, 53% 89%, 59% 88%, 65% 86%, 71% 83%, 76% 80%, 79% 76%, 81% 71%, 84% 64%, 86% 58%, 87% 51%, 86% 43%, 84% 36%, 83% 30%, 79% 26%, 73% 21%, 67% 19%, 62% 16%, 55% 15%, 49% 13%, 41% 14%, 35% 15%, 31% 18%, 28% 20%)
 }
+
+.part1{
+    background-image:url("./Assets/home-service-1.png");
+}
+.part2{
+    background-image:url("./Assets/round\ \(1\).jpg");
+}
+.part3{
+    background-image:url("./Assets/round\ \(2\).jpg");
+}
+.part4{
+    background-image:url("./Assets/round\ \(3\).jpg");
+}
+
 .hvchange:hover .custom-div{
     transition: all ease 2s;
     clip-path: polygon(19% 17%, 15% 26%, 11% 36%, 12% 48%, 13% 59%, 17% 68%, 20% 75%, 25% 80%, 30% 84%, 38% 87%, 43% 88%, 50% 89%, 59% 88%, 65% 84%, 73% 81%, 76% 76%, 81% 69%, 83% 62%, 87% 56%, 87% 49%, 85% 42%, 83% 36%, 82% 29%, 77% 26%, 73% 20%, 63% 15%, 56% 14%, 46% 12%, 39% 14%, 34% 13%, 29% 13%, 24% 14%, 20% 15%, 15% 19%, 14% 23%, 12% 28%, 11% 33%, 11% 42%);
@@ -171,7 +187,38 @@ left: 100px;
     transform: rotate(60deg);
 }
 
+.fotter-main-txt{
+    font-size: 30px;
+    color: #ffffff;
+}
 
+.triangle{
+    position: fixed;
+    z-index: 999;
+    right:5%;
+    top:85%;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50.6px solid rgba(0, 0, 0, 0.506); /* Adjust the color as needed */
+    animation: updown 2s ease-in-out infinite;
+  }
+  @keyframes updown {
+    50%{
+        transform: translateY(10px);
+        border-bottom: 50.6px solid rgba(0, 0, 0, 0.829); /* Adjust the color as needed */
+
+    }
+    100%{
+        transform: translateY(0px);
+
+    }
+  }
+.fotter-inner-txt{
+    font-size: 18px;
+    color: #ffffff;
+}
 
 .custom-div-con{
     position: relative;
@@ -455,7 +502,8 @@ left: 100px;
 ::-webkit-scrollbar{
     width:0px;
 }
-.fixed-top{
+.fixed-top-data{
+    transition: all 2s ease-in;
     background-color: rgba(0, 0, 0, 0.718) !important;
     z-index:999 !important;
 }
