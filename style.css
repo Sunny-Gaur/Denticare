@@ -502,8 +502,9 @@ left: 100px;
 ::-webkit-scrollbar{
     width:0px;
 }
+
 .fixed-top-data{
-    transition: all 2s ease-in;
+    transition: all 2ms ease-in;
     background-color: rgba(0, 0, 0, 0.718) !important;
     z-index:999 !important;
 }

@@ -30,3 +30,13 @@ let btn=document.querySelector("#up-down-btn");
 btn.addEventListener("click",()=>{
     document.documentElement.scrollTop=0;
 })
+
+let smnav=document.querySelector(".sm-nav");
+smnav.addEventListener("click",()=>{
+   if(smnav.classList.contains("show")){
+    smnav.classList.remove("show");
+   }
+   else{
+    smnav.classList.add("show");
+   }
+})
